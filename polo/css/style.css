@@ -1,0 +1,298 @@
+/* 
+======================================
+THEME COLOR
+====================================== 
+#
+#
+#
+#
+
+1. FONTS
+2. MAIN
+3. LIST
+4. QUERY
+*/
+/* 
+========================
+		MAIN
+======================== 
+*/
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+  	line-height: 1.4em;
+  	font-family: 'Verdana', 'Helvetica','Tahoma',sans-serif;  
+  	font-weight: normal;
+  	font-style: normal;
+  	color: #000;
+}
+* {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 100px;	
+}
+
+main{
+	width: 100%;
+	height: auto;
+	position: relative;	
+}
+.row{
+	width:100%;
+	height: auto;
+	margin: 0px;
+	/* padding: 10px; */
+	/* border: 1px solid grey; */
+	padding: 20px 0px 20px 0px;
+}
+.post{
+	display: inline-block;
+	width: 33%;
+	padding: 10px;
+}
+.post img{
+	border: 8px solid #f3f3f3;
+	border-radius: 4px;
+}
+.learn {
+	background: transparent url('../img/learn.png') no-repeat center;
+	width: 163px;
+	height: 40px;
+}
+
+.learn:hover {
+	background: transparent url('../img/learn2.png') no-repeat center;
+}
+.slider{
+	height: 440px;	
+	border-bottom: solid #fff 100px;
+	background: #151515;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#333333));
+	background: -webkit-linear-gradient(#151515 0%, #333333 100%);
+	background: -moz-linear-gradient(#151515 0%, #333333 100%);
+	background: -o-linear-gradient(#151515 0%, #333333 100%);
+	background: linear-gradient(#151515 0%, #333333 100%);
+	position: relative;
+	z-index:100;
+	margin: 0 auto;
+}
+.slider img{
+	display: block;
+	width: 100%;
+}
+hr.divider {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	
+}
+/* 
+==========================
+		FOOTER
+========================== 
+*/
+footer{
+	color: #666666;
+	display: block;
+	width: 100%;
+	height: 100px;
+	background: #333333;
+	border-top: 10px solid #4c4c4c;	
+}
+.footer-left{
+	padding: 10px;
+	width: 400px;
+	float: left;
+}
+.footer-right{
+	display: block;
+	padding: 10px;
+	width: 400px;
+	float: right;
+}
+.container{
+	display: block;
+	width: 940px;	
+	margin: 0 auto;	
+}
+.logo{
+	float: left;
+	width: 287px;
+	height: 76px;	
+	margin: 12px;
+}
+/* 
+============================
+		NAVIGATION
+============================ 
+*/
+nav{
+	float: right;	
+	width: 600px;
+	height: 48px;	
+	margin: 26px 0px 26px 0px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    overflow: hidden;    
+}
+nav li {
+    display: inline-block;
+    margin-left: 3px;
+    position: relative;
+    background: url('../img/dot.gif') repeat-y left;
+    height: 45px;
+    margin: 5px;
+}
+nav li a {
+    display: block;
+    font-family: sans-serif;
+	color: #666666;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;    
+}
+nav li a:hover {
+    font-size: 18px;
+}
+nav p {
+	font-size: 10px;
+	color: #cacaca;	
+}
+/* 
+==============================
+
+============================== 
+*/
+a {
+	text-decoration: none;
+	font-size: 18px;	
+	-webkit-transition: all 0.15s ease;
+	   -moz-transition: all 0.15s ease;
+	    -ms-transition: all 0.15s ease;
+	     -o-transition: all 0.15s ease;
+	        transition: all 0.15s ease;
+}
+img {
+	display: block;
+	width: 100%;	
+}
+
+
+h3{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.subscribe {
+	background: transparent url('../img/subsclibe.png') no-repeat center;
+	width: 163px;
+	height: 40px;
+}
+
+.subscribe:hover {
+	background: transparent url('../img/subsclibe2.png') no-repeat center;
+}
+
+.facebook {
+	background: transparent url('../img/facebook.png') no-repeat center;
+	width: 56px;
+	height: 56px;
+}
+.facebook:hover {
+	background: transparent url('../img/facebook2.png') no-repeat center;
+}
+.twitter {
+	background: transparent url('../img/twitter.png') no-repeat center;
+	width: 56px;
+	height: 56px;
+}
+.twitter:hover {
+	background: transparent url('../img/twitter2.png') no-repeat center;
+}
+.rss {
+	background: transparent url('../img/rss.png') no-repeat center;
+	width: 56px;
+	height: 56px;
+}
+.rss:hover {
+	background: transparent url('../img/rss2.png') no-repeat center;
+}
+.in {
+	background: transparent url('../img/linkedin.png') no-repeat center;
+	width: 56px;
+	height: 56px;
+}
+.in:hover {
+	background: transparent url('../img/linkedin2.png') no-repeat center;
+}
+.youtube {
+	background: transparent url('../img/youtube.png') no-repeat center;
+	width: 56px;
+	height: 56px;
+}
+.youtube:hover {
+	background: transparent url('../img/youtube2.png') no-repeat center;
+}
+.dash {	
+	overflow: auto;
+	border-top:1px dashed #ccc;
+}
+
+.social{
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	padding: 10px;
+}
+.social ul{
+	display: inline-block;	
+	padding: 0;
+	margin: 0;
+}
+.social ul li {
+	display: inline-block;
+	list-style: none;
+	
+}
+.contact{
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	padding: 10px;
+}
+.updates{
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	padding: 10px;
+}
+.list{
+	width: 100%;
+	display: inline-block;
+	padding: 10px 0px 10px 0px;
+}
+.list img{
+	width: 100%;
+}
+.le{
+	float: left;
+	width: 22%;
+	border: 3px solid #ccc;
+}
+.ri{
+	float: right;
+	width: 75%;
+}
