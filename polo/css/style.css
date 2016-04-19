@@ -265,7 +265,7 @@ h3{
 .social ul li {
 	display: inline-block;
 	list-style: none;
-	
+	width: 54px;
 }
 .contact{
 	display: inline-block;
