@@ -58,8 +58,12 @@ main{
 }
 .post img{
 	border: 8px solid #f3f3f3;
-	border-radius: 4px;
+	border-radius: 4px;	
+	background-image: linear-gradient(top, black 50%, bottom 200%);	
+	background-color: black;
+	box-shadow: 0 13px 7px -7px rgba(0, 0, 0, 0.5);	
 }
+
 .learn {
 	background: transparent url('../img/learn.png') no-repeat center;
 	width: 163px;
@@ -85,6 +89,7 @@ main{
 .slider img{
 	display: block;
 	width: 100%;
+	padding: 30px 0px 0px 0px;
 }
 hr.divider {
 	border: 0;
@@ -169,7 +174,8 @@ nav li a:hover {
 }
 nav p {
 	font-size: 10px;
-	color: #cacaca;	
+	color: #cacaca;
+	margin: 5px 0px 0px 0px;	
 }
 /* 
 ==============================
@@ -315,11 +321,14 @@ input[type="text"] {
    font-size: 11px;
    font-family: Tahoma; 
    margin-bottom: 20px;
+   padding-left: 10px;
+   color: #969696;
 }
 input{
 	padding: 5px 0px 5px 0px;
 }
 textarea {
+	display: block;
    border: 1px solid #cccccc; 
    border-radius: 3px; 
    -webkit-border-radius: 3px; 
@@ -329,16 +338,21 @@ textarea {
    outline: none; 
    height: 130px; 
    width: 100%; 
-   color: #cccccc;
+   color: #969696;
    font-size: 11px;
    font-family: Tahoma; 
    margin-bottom: 10px;
+   padding: 10px;
 }
 h5{
 	font-size: 16px;
 	margin: 10px 0px 10px 0px;	
 }
 p{
+	font-size: 12px;
+	margin: 15px 0px 15px 0px;
+}
+.social p, .updates p{
 	font-size: 12px;
 	margin: 0px 0px 15px 0px;
 }
