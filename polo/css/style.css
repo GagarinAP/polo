@@ -58,10 +58,10 @@ main{
 }
 .post img{
 	border: 8px solid #f3f3f3;
-	border-radius: 4px;	
+	border-radius: 5px;	
 	background-image: linear-gradient(top, black 50%, bottom 200%);	
 	background-color: black;
-	box-shadow: 0 13px 7px -7px rgba(0, 0, 0, 0.5);	
+	box-shadow: 5px 7px 7px -7px rgba(99, 99, 99, 0.5);	
 }
 
 .learn {
@@ -371,11 +371,11 @@ small{
 }
 .sliderA > input + label {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
     border-radius: 8px;
-    background: rgba(200, 200, 0, 0.8);
-    border: 2px solid rgba(0, 0, 0, 0.8);
+    background: #fff/* rgb(250, 250, 250, 0.8) */;
+    border: 3px solid rgba(0, 0, 0, 0.8);
     cursor: pointer;
     z-index: 100;
     position: relative;
@@ -388,7 +388,7 @@ small{
     background: rgba(250, 250, 250, 0.8);
 }
 .sliderA > input:checked + label {
-    background: rgba(220, 220, 220, 0.8);
+    background: #4adbfa/* rgba(220, 220, 220, 0.8) */;
 }
 .sliderA > div {
     position: absolute;
@@ -401,12 +401,12 @@ small{
 .sliderA > div {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    transition: opacity 0.5s ease-out 0s, visibility 0.5s ease-out 0s;
 }
 .sliderA > input:checked + label + div {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    transition: opacity 0.5s ease-out 0s, visibility 0.5s ease-out 0s;
 }
 .sliderA > div > h3 {    
     top: 0px;
