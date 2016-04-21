@@ -1,17 +1,43 @@
 /* 
 ======================================
-THEME COLOR
+THEME POLO360
 ====================================== 
-#
-#
-#
-#
-
-1. FONTS
-2. MAIN
-3. LIST
-4. QUERY
+1.  FONTS
+2.  MAIN
+3.  NAVIGATION
+4.	TEXT
+5.	SOCIAL
+6.	FORM
+7.  SLIDER
+8.  FOOTER
+9.  MEDIA
 */
+
+/* 
+========================
+		FONTS
+======================== 
+*/
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald/Oswald-Regular.ttf') format('truetype'),
+    	 url('fonts/Oswald/Oswald-Regular.svg#Oswald') format('svg'),
+         url('fonts/Oswald/Oswald-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Yellowtail';
+    src: url('fonts/Yellowtail/Yellowtail-Regular-webfont.woff') format('woff'),
+         url('fonts/Yellowtail/Yellowtail-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Yellowtail/Yellowtail-Regular-webfont.svg#Yellowtail') format('svg');
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans/OpenSans.woff') format('woff'),
+         url('fonts/OpenSans/OpenSans.ttf') format('truetype'),
+         url('fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
+}
+
+
 /* 
 ========================
 		MAIN
@@ -34,7 +60,7 @@ body{
 }
 header{
 	width: 100%;
-	height: 100px;	
+	min-height: 100px;	
 }
 
 main{
@@ -45,9 +71,7 @@ main{
 .row{
 	width:100%;
 	height: auto;
-	margin: 0px;
-	/* padding: 10px; */
-	/* border: 1px solid grey; */
+	margin: 0px;	
 	padding: 20px 0px 20px 0px;
 	display: inline-flex;
 }
@@ -63,58 +87,38 @@ main{
 	background-color: black;
 	box-shadow: 5px 7px 7px -7px rgba(99, 99, 99, 0.5);	
 }
-
 .learn {
 	background: transparent url('../img/learn.png') no-repeat center;
 	width: 163px;
 	height: 40px;
 }
-
 .learn:hover {
 	background: transparent url('../img/learn2.png') no-repeat center;
 }
-
 hr.divider {
 	border: 0;
 	height: 1px;
 	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 	
 }
-/* 
-==========================
-		FOOTER
-========================== 
-*/
-footer{
-	color: #666666;
-	display: block;
-	width: 100%;
-	height: 100px;
-	background: #333333;
-	border-top: 10px solid #4c4c4c;	
-}
-.footer-left{
-	padding: 10px;
-	width: 400px;
-	float: left;
-}
-.footer-right{
-	display: block;
-	padding: 10px;
-	width: 400px;
-	float: right;
+.dash {	
+	padding: 5px;
+	overflow: auto;
+	border-top:1px dashed #ccc;
 }
 .container{
 	display: block;
-	width: 940px;	
+	width: 100%;
+	max-width: 940px;	
 	margin: 0 auto;	
 }
 .logo{
+	display: block;
 	float: left;
-	width: 287px;
+	width: 100%;
+	max-width: 287px;
 	height: 76px;	
 	margin: 12px;
 }
@@ -125,7 +129,8 @@ footer{
 */
 nav{
 	float: right;	
-	width: 600px;
+	width: 100%;
+	max-width: 600px;
 	height: 48px;	
 	margin: 26px 0px 26px 0px;
 }
@@ -162,7 +167,7 @@ nav p {
 }
 /* 
 ==============================
-
+		TEXT
 ============================== 
 */
 a {
@@ -178,22 +183,36 @@ img {
 	display: block;
 	width: 100%;	
 }
+h5{
+	font-size: 16px;
+	margin: 10px 0px 10px 0px;	
+}
+p{
+	font-size: 12px;
+	margin: 15px 0px 15px 0px;
+}
+.social p, .updates p{
+	font-size: 12px;
+	margin: 0px 0px 10px 0px;
+}
 h3{
 	font-size: 20px;
 	text-align: center;
 	padding-bottom: 10px;
 }
-
+/*
+==============================
+		SOCIAL
+============================== 
+*/
 .subscribe {
 	background: transparent url('../img/subsclibe.png') no-repeat center;
 	width: 163px;
 	height: 40px;
 }
-
 .subscribe:hover {
 	background: transparent url('../img/subsclibe2.png') no-repeat center;
 }
-
 .facebook {
 	background: transparent url('../img/facebook.png') no-repeat center;
 	width: 56px;
@@ -234,12 +253,6 @@ h3{
 .youtube:hover {
 	background: transparent url('../img/youtube2.png') no-repeat center;
 }
-.dash {	
-	padding: 5px;
-	overflow: auto;
-	border-top:1px dashed #ccc;
-}
-
 .social{
 	display: inline-block;
 	width: 33%;
@@ -267,6 +280,17 @@ h3{
 	width: 33%;
 	height: auto;
 	padding: 10px;
+}
+.updates ul{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding:0;
+}
+.updates li{
+	display: inline-block;
+	list-style-type: none;
 }
 .list{
 	width: 100%;
@@ -327,24 +351,14 @@ textarea {
    margin-bottom: 10px;
    padding: 10px;
 }
-h5{
-	font-size: 16px;
-	margin: 10px 0px 10px 0px;	
-}
-p{
-	font-size: 12px;
-	margin: 15px 0px 15px 0px;
-}
-.social p, .updates p{
-	font-size: 12px;
-	margin: 0px 0px 15px 0px;
-}
-small{
-	font-size:10px;
-
-}
+/* 
+================================
+		SLIDER
+================================ 
+*/
 .slider{
-	height: 440px;	
+	height: 100%;
+	max-height: 440px;	
 	border-bottom: solid #fff 100px;
 	background: #151515;
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#333333));
@@ -374,7 +388,7 @@ small{
     width: 16px;
     height: 16px;
     border-radius: 8px;
-    background: #fff/* rgb(250, 250, 250, 0.8) */;
+    background: #fff;
     border: 3px solid rgba(0, 0, 0, 0.8);
     cursor: pointer;
     z-index: 100;
@@ -388,7 +402,7 @@ small{
     background: rgba(250, 250, 250, 0.8);
 }
 .sliderA > input:checked + label {
-    background: #4adbfa/* rgba(220, 220, 220, 0.8) */;
+    background: #4adbfa;
 }
 .sliderA > div {
     position: absolute;
@@ -412,5 +426,171 @@ small{
     top: 0px;
     left: 0px;
     right: 0px;
-    text-align: center;    
+    text-align: center; 
+    line-height: 1.2em;   
+}
+/* 
+==========================
+		FOOTER
+========================== 
+*/
+footer{
+	color: #666666;
+	display: block;
+	width: 100%;
+	height: 100px;
+	background: #333333;
+	border-top: 10px solid #4c4c4c;	
+}
+.footer-left{
+	display: block;
+	padding: 10px;
+	width: 100%;
+	max-width: 400px;
+	float: left;
+}
+.footer-right{
+	display: block;
+	padding: 10px;
+	width: 100%;
+	max-width: 400px;
+	float: right;
+}
+/* 
+=============================
+		MEDIA
+============================= 
+*/
+@media screen and (max-width: 1024px){	
+	.container{
+		width: 748px;
+	}
+	.sliderA{
+		width: 748px;
+	}
+	.slider{
+		height: 380px;
+	}
+	.sliderA > input + label {
+		top: 77%;
+	}
+	.logo{
+		width: 20%;
+		padding: 20px 0px 20px 0px;
+	}
+	.logo a img{
+		width: 100%;
+	}
+	nav{
+		width: 74%;
+	}
+	.list{
+		width: 100%;
+		display: inline-block;
+		padding: 0px 0px 0px 0px;
+	}
+	.list img{
+		width: 60px;
+	}
+	.le{
+		border: 4px solid #ccc;
+		border-radius: 4px;
+		width: 30%;
+	}
+	.ri{
+		width: 69%;
+	}
+	.ri p{
+		font-size: 10px;
+		margin: 0px 0px 5px 0px;
+		padding-left: 5px;
+	}
+	.footer-left{
+		width: 49.99%;
+	}
+	.footer-right{
+		width: 49.99%;
+	}	
+}
+
+@media screen and (max-width: 768px){	
+	.container{
+		width: 100%;
+	}
+	.sliderA{
+		width: 100%;
+	}
+	.sliderA > input + label {
+		top: 50px;
+	}
+	.row{
+		display: inline-block;
+	}
+	.post,.social,.updates,.contact{
+		width: 100%;
+	}
+	.list{
+		padding: 0px 0px 8px 0px;
+	}
+	.list img{
+		width: 120px;
+	}
+	.le{
+		width: 24%;
+	}
+	.ri{
+		width: 75%;
+	}
+	.ri p{
+		font-size: 14px;
+	}
+	.slider{
+		height: 100%;	
+		max-height: 380px;
+		border-bottom: solid #fff 30vh;
+	}
+	nav p{
+		display: none;
+	}
+	nav li{
+		height: 100%;
+	}
+	.updates li{
+		padding-bottom: 8px;
+	}	
+}
+@media screen and (max-width: 481px){
+	.logo{
+		width: 100%;
+		padding: 20px 0px 20px 0px;
+		margin: 0 auto;
+		float: none;
+	}
+	.slider{
+		display: none;
+	}
+	header nav{
+		width: 100%;
+		float: none;	
+		height: 100%;	
+		min-height: 80px;
+		margin: 50px 0px 0px 0px;
+	}
+	header nav ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 10px;
+		float: right;
+		overflow: hidden;
+	}
+	header nav li{		
+		background: none;
+		float: none;
+		margin: 0px;
+		padding-bottom: 10px;
+	}
+	header nav li a{
+		font-size: 25px;
+		font-family: Verdana;
+	}
 }
