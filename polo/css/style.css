@@ -18,25 +18,18 @@ THEME POLO360
 		FONTS
 ======================== 
 */
-@font-face {
-    font-family: 'Oswald';
-    src: url('fonts/Oswald/Oswald-Regular.ttf') format('truetype'),
-    	 url('fonts/Oswald/Oswald-Regular.svg#Oswald') format('svg'),
-         url('fonts/Oswald/Oswald-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Yellowtail';
-    src: url('fonts/Yellowtail/Yellowtail-Regular-webfont.woff') format('woff'),
-         url('fonts/Yellowtail/Yellowtail-Regular-webfont.ttf') format('truetype'),
-         url('fonts/Yellowtail/Yellowtail-Regular-webfont.svg#Yellowtail') format('svg');
-}
-@font-face {
-    font-family: 'OpenSans';
-    src: url('fonts/OpenSans/OpenSans.woff') format('woff'),
-         url('fonts/OpenSans/OpenSans.ttf') format('truetype'),
-         url('fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
-}
-
+	/*    font-family: "Gill Sans MT"    */
+	@import url(http://db.onlinewebfonts.com/c/3f3b5dee5276f99b6d5bfcf7e1a7be52?family=Gill+Sans+MT);
+	/*    font-family: "Georgia Bold"    */
+	@import url(http://db.onlinewebfonts.com/c/08a3a3f82f0c66432e780f79e74924cd?family=Georgia);
+	/*    font-family: "Georgia"    */
+	@import url(http://db.onlinewebfonts.com/c/7dca09e227fdfe16908cebb4244589e4?family=Georgia);
+	/*    font-family: "Helvetica"    */
+	@import url(http://db.onlinewebfonts.com/c/bec9cfcd690948400517b31821c873e1?family=Helvetica);
+	/*    font-family: "Tahoma"    */
+	@import url(http://db.onlinewebfonts.com/c/cd0381aa3322dff4babd137f03829c8c?family=Tahoma);
+	/*    font-family: "Verdana"    */
+	@import url(http://db.onlinewebfonts.com/c/562fa31bba08b3f71cb71257ddb880d5?family=Verdana);
 
 /* 
 ========================
@@ -122,6 +115,29 @@ hr.divider {
 	height: 76px;	
 	margin: 12px;
 }
+main div.row h5 {
+	font-size: 18px;
+}
+main div.post h5 {
+	font-size: 21px;
+	color: rgb(17,113,156);
+}
+main div h6 {
+	font-family: 'Gill Sans MT';
+	font-size: 18px;
+	color: rgb(68,68,68);
+	margin: 10px 0px 10px 0px;	
+}
+main div.post p {
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+	color: rgb(62,62,62);
+}
+.post .un_title {
+	font-size: 12px;
+	color: rgb(140,140,140);
+}
+
 /* 
 ============================
 		NAVIGATION
@@ -151,8 +167,8 @@ nav li {
 }
 nav li a {
     display: block;
-    font-family: sans-serif;
-	color: #666666;
+    font-family: 'Georgia Bold';
+	color: rgb(102,102,102);
 	font-size: 16px;
 	font-weight: bold;
 	padding-left: 10px;    
@@ -161,8 +177,9 @@ nav li a:hover {
     color: #000;
 }
 nav p {
-	font-size: 10px;
-	color: #cacaca;
+	font-size: 11px;
+	color: rgb(183,183,183);
+	font-family: Tahoma, sans-serif;
 	margin: 5px 0px 0px 0px;	
 }
 /* 
@@ -183,22 +200,22 @@ img {
 	display: block;
 	width: 100%;	
 }
-h5{
-	font-size: 16px;
-	margin: 10px 0px 10px 0px;	
-}
-p{
-	font-size: 12px;
-	margin: 15px 0px 15px 0px;
-}
-.social p, .updates p{
-	font-size: 12px;
-	margin: 0px 0px 10px 0px;
-}
-h3{
-	font-size: 20px;
+h3 {
+	font-family: "Georgia Bold";
+	font-size: 24px;
 	text-align: center;
 	padding-bottom: 10px;
+}
+h5 {
+	color: rgb(68,68,68);
+	font-family: "Georgia";
+	margin: 10px 0px 10px 0px;	
+}
+.social p, .updates p {
+	font-size: 12px;
+	font-family: Helvetica, sans-serif;
+	color: rgb(68,68,68);
+	margin: 0px 0px 10px 0px;
 }
 /*
 ==============================
@@ -317,19 +334,15 @@ h3{
 input[type="text"] {
    border: 1px solid #cccccc; 
    border-radius: 3px; 
-   -webkit-border-radius: 3px; 
-   -moz-border-radius: 3px; 
-   -khtml-border-radius: 3px; 
+   	-webkit-border-radius: 	3px; 
+	-moz-border-radius: 	3px; 
+   	-khtml-border-radius: 	3px; 
    background: #ffffff !important;
    outline: none; 
    height: 34px; 
    width: 100%; 
-   color: #cccccc;
-   font-size: 11px;
-   font-family: Tahoma; 
    margin-bottom: 20px;
    padding-left: 10px;
-   color: #969696;
 }
 input{
 	padding: 5px 0px 5px 0px;
@@ -345,12 +358,16 @@ textarea {
    outline: none; 
    height: 130px; 
    width: 100%; 
-   color: #969696;
-   font-size: 11px;
-   font-family: Tahoma; 
    margin-bottom: 10px;
    padding: 10px;
 }
+input[type="text"], .contact textarea {
+   color: rgb(212,212,212);
+   font-size: 10px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   letter-spacing: 2px;
+}
+
 /* 
 ================================
 		SLIDER
@@ -434,8 +451,15 @@ textarea {
 		FOOTER
 ========================== 
 */
-footer{
-	color: #666666;
+footer div, footer p, footer menu, footer li, footer a {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+	color: rgb(153,153,153);
+	line-height: 1.5;
+	font-size: 12px;
+}
+footer {
 	display: block;
 	width: 100%;
 	height: 100px;
@@ -445,15 +469,17 @@ footer{
 .footer-left{
 	display: block;
 	padding: 10px;
-	width: 100%;
+	width: 64%;
 	max-width: 400px;
 	float: left;
+}
+.footer-left li {
+	display: inline-block;
 }
 .footer-right{
 	display: block;
 	padding: 10px;
-	width: 100%;
-	max-width: 400px;
+	width: 34.99%;
 	float: right;
 }
 /* 
@@ -509,7 +535,7 @@ footer{
 		width: 49.99%;
 	}
 	.footer-right{
-		width: 49.99%;
+		width: 34.99%;
 	}	
 }
 
@@ -557,7 +583,17 @@ footer{
 	}
 	.updates li{
 		padding-bottom: 8px;
-	}	
+	}
+	main .row div p {
+		font-size: 1.8em;
+		line-height: 1.2;
+	}
+	main .row div p.un_title {
+		font-size: 1.4em;
+	}
+		main .row div.ri p {
+		font-size: 2em;
+	}
 }
 @media screen and (max-width: 481px){
 	.logo{
