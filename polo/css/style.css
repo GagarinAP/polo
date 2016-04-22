@@ -216,7 +216,7 @@ h5 {
 	font-size: 12px;
 	font-family: Helvetica, sans-serif;
 	color: rgb(68,68,68);
-	margin: 0px 0px 10px 0px;
+	margin: 0;
 }
 /*
 ==============================
@@ -299,28 +299,22 @@ h5 {
 	height: auto;
 	padding: 10px;
 }
-.updates ul{
-	display: inline-block;
+.update-post{
 	width: 100%;
-	height: auto;
-	margin: 0;
-	padding:0;
-}
-.updates li{
 	display: inline-block;
-	list-style-type: none;
+	height: auto;
+	margin: 0px 0px 10px 0px;
+	padding:0;
 }
 .list{
 	width: 100%;
-	display: inline-block;
-	/* padding: 10px 0px 10px 0px; */
+	display: inline-block;	
 }
 .list img{
 	width: 100%;
 }
 .le{
-	float: left;
-	/* width: 22%; */
+	float: left;	
 	border: 5px solid #ccc;
 	border-radius: 3px;
 }
@@ -336,8 +330,8 @@ input[type="text"] {
    border: 1px solid #cccccc; 
    border-radius: 3px; 
    	-webkit-border-radius: 	3px; 
-	-moz-border-radius: 	3px; 
-   	-khtml-border-radius: 	3px; 
+	   -moz-border-radius: 	3px; 
+   	     -o-border-radius: 	3px; 
    background: #ffffff !important;
    outline: none; 
    height: 34px; 
@@ -349,12 +343,12 @@ input{
 	padding: 5px 0px 5px 0px;
 }
 textarea {
-	display: block;
+   display: block;
    border: 1px solid #cccccc; 
    border-radius: 3px; 
    -webkit-border-radius: 3px; 
-   -moz-border-radius: 3px; 
-   -khtml-border-radius: 3px; 
+      -moz-border-radius: 3px; 
+        -o-border-radius: 3px; 
    background: #ffffff !important;
    outline: none; 
    height: 130px; 
@@ -455,7 +449,7 @@ input[type="text"], .contact textarea {
 		FOOTER
 ========================== 
 */
-footer div, footer p, footer menu, footer li, footer a {
+footer div, footer p, footer ul, footer li, footer a {
 	padding: 0;
 	margin: 0;
 	font-family: Helvetica, sans-serif;
@@ -473,10 +467,7 @@ footer {
 }
 .footer-left{
 	display: inline-block;
-	padding: 10px;
-	/* width: 64%;
-	max-width: 400px;
-	float: left; */
+	padding: 10px;	
 }
 .footer-left li {
 	display: inline-block;
@@ -495,6 +486,9 @@ footer {
 @media screen and (max-width: 1024px){	
 	.container{
 		width: 748px;
+	}
+	main{
+		padding-top:0px;
 	}
 	.sliderA{
 		width: 748px;
@@ -551,6 +545,9 @@ footer {
 	.container{
 		width: 100%;
 	}
+	main{
+		padding-top:0px;
+	}
 	.sliderA{
 		width: 100%;
 	}
@@ -589,7 +586,7 @@ footer {
 	nav li{
 		height: 100%;
 	}
-	.updates li{
+	.update-post{
 		padding-bottom: 8px;
 	}
 	main .row div p {
@@ -612,6 +609,9 @@ footer {
 	}
 	.slider{
 		display: none;
+	}
+	main{
+		padding-top:0px;
 	}
 	header nav{
 		width: 100%;
