@@ -507,7 +507,16 @@ footer {
 		width: 100%;
 	}
 	nav{
-		width: 74%;
+		width: 75%;
+	}
+	nav p{
+		display: none;
+	}
+	nav li a{
+		font-size: 24px
+	}
+	nav li{
+		height: 100%;
 	}
 	.list{
 		width: 100%;
@@ -586,6 +595,9 @@ footer {
 	nav li{
 		height: 100%;
 	}
+	nav li a {
+		font-size: 24px;
+	}	
 	.update-post{
 		padding-bottom: 8px;
 	}
@@ -600,7 +612,7 @@ footer {
 		font-size: 2em;
 	}
 }
-@media screen and (max-width: 481px){
+@media screen and (max-width: 495px){
 	.logo{
 		width: 100%;
 		padding: 20px 0px 20px 0px;
@@ -608,6 +620,9 @@ footer {
 		float: none;
 	}
 	.slider{
+		display: none;
+	}
+	nav p{
 		display: none;
 	}
 	main{
